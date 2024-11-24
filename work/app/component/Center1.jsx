@@ -11,7 +11,7 @@ const Center1 = () => {
             <div className="animate-left-right relative top-[0px] right-[-90px] w-[45px] h-[45px] bg-[#CF264A] rounded-full bottom-[-100px] "></div>
             <div className="animate-left-right relative top-[-50px] right-[-50px] w-[25px] h-[25px] bg-[#FFDA39] rounded-full bottom-[-100px] "></div>
           </div>
-          <div className=" absolute top-[220px] right-[-200px] bg-m1 w-[500px] h-[500px] bg-cover bg-center bg-no-repeat max-[978px]:scale-[0.7] max-[978px]:top-[130px] max-[978px]:right-[-235px] max-[700px]:top-[30px] max-[440px]:scale-[0.6] max-[440px]:top-[-65px] max-[440px]:scale-[0.61]">
+          <div className=" absolute top-[220px] right-[-200px] bg-m1 w-[500px] h-[500px] bg-cover bg-center bg-no-repeat max-[978px]:scale-[0.7] max-[978px]:top-[130px] max-[978px]:right-[-235px] max-[700px]:top-[30px] max-[440px]:top-[-65px] max-[440px]:scale-[0.61]">
             <div className="animate-left-right relative top-[195px] right-[-200px] w-[55px] h-[55px] bg-[#CF264A] rounded-full bottom-[-100px] "></div>
             <div className="animate-left-right relative top-[175px] right-[-255px] w-[30px] h-[30px] bg-[#FFEA8E] rounded-full bottom-[-100px] "></div>
             <div className="absolute top-[70px] right-[50px] bg-m3 bg-cover bg-center w-[250px] h-[230px] animate-left-right2"></div>

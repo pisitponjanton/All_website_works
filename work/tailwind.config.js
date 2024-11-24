@@ -42,6 +42,7 @@ module.exports = {
         'bg1-2': "url('/Water1/bg1.png')",
         'seed': "url('/Water1/seed.png')",
         'human': "url('/Water1/human.png')",
+        'human2': "url('/Water1/human2.png')",
         'w1': "url('/Water1/w1.png')",
         'b2b': "url('/Water1/b2b.png')",
         'bg2-2': "url('/Water2/bg2.png')",
