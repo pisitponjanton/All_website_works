@@ -1,0 +1,17 @@
+@import url('/List/List.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("/fonts/Inter_28pt-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.sd {
+  box-shadow: 35px 35px #18181888;
+}
+

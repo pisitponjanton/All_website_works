@@ -1,0 +1,246 @@
+.lboxlist {
+  position: relative;
+  top: -220px;
+  width: 1380px;
+  height: 350px;
+}
+.lists {
+  width: 400px;
+  height: 400px;
+}
+.lbox {
+  width: 300px;
+  height: 450px;
+}
+.lboxre1 {
+  top: -150px;
+  right: 40px;
+}
+.lboxre2 {
+  top: -150px;
+  right: -25px;
+}
+.lboxre3 {
+  top: -150px;
+  right: -26px;
+}
+.lbu1 {
+  width: 245px;
+  height: 190px;
+  position: absolute;
+  top: 150px;
+  right: -115px;
+}
+.lbu2 {
+  position: absolute;
+  width: 245px;
+  height: 190px;
+  top: -80px;
+  right: -95px;
+}
+.lbu3 {
+  position: absolute;
+  width: 264px;
+  height: 200px;
+  top: 50px;
+  left: -45px;
+}
+.ltext1 {
+  font-size: 40px;
+  position: relative;
+  top: 220px;
+  left: 40px;
+}
+.lgreen1_size {
+  width: 245px;
+  height: 190px;
+}
+.lgreen1_box {
+  position: absolute;
+  top: -65px;
+  left: -60px;
+}
+.lgreen2_size {
+  width: 285px;
+  height: 230px;
+}
+.lgreen2_box {
+  position: absolute;
+  top: 250px;
+  left: 180px;
+}
+.lcherry1 {
+  position: absolute;
+  top: -120px;
+  left: -10px;
+  width: 290px;
+  height: 235px;
+}
+.lcherry2 {
+  position: absolute;
+  top: 180px;
+  right: -20px;
+  width: 350px;
+  height: 275px;
+}
+
+@media (max-width: 1385px) {
+  .lboxlist {
+    top: -180px;
+    width: 980px;
+    height: 210px;
+  }
+  .lists {
+    width: 260px;
+    height: 260px;
+  }
+  .lbox {
+    width: 150px;
+    height: 300px;
+  }
+  .lboxre1 {
+    top: -90px;
+    right: 40px;
+  }
+  .lboxre2 {
+    top: -90px;
+    right: 8px;
+  }
+  .lboxre3 {
+    top: -90px;
+    right: 15px;
+  }
+  .lbu1 {
+    width: 200px;
+    height: 100px;
+    right: -100px;
+  }
+  .lbu2 {
+    width: 200px;
+    height: 100px;
+    top: -80px;
+  }
+  .lbu3 {
+    width: 204px;
+    height: 140px;
+  }
+  .ltext1 {
+    font-size: 25px;
+    top: 165px;
+    left: 35px;
+  }
+  .lgreen1_size {
+    width: 180px;
+    height: 125px;
+  }
+  .lgreen1_box {
+    top: -40px;
+    left: -50px;
+  }
+  .lgreen2_size {
+    width: 205px;
+    height: 150px;
+  }
+  .lgreen2_box {
+    top: 160px;
+    left: 160px;
+  }
+  .lcherry1 {
+    top: -80px;
+    left: -20px;
+    width: 200px;
+    height: 145px;
+  }
+  .lcherry2 {
+    top: 160px;
+    right: 0px;
+    width: 200px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 978px) {
+  .lboxlist {
+    top: -160px;
+    width: 700px;
+    height: 150px;
+  }
+  .lists {
+    width: 180px;
+    height: 180px;
+  }
+  .lbox {
+    width: 100px;
+    height: 200px;
+  }
+  .lboxre1 {
+    top: -50px;
+    right: 30px;
+  }
+  .lboxre2 {
+    top: -50px;
+    right: 8px;
+  }
+  .lboxre3 {
+    top: -50px;
+    right: 15px;
+  }
+  .lbu1 {
+    width: 150px;
+    height: 100px;
+    right: -80px;
+    top: 120px;
+  }
+  .lbu2 {
+    width: 80px;
+    height: 50px;
+    top: -80px;
+    right: -40px;
+  }
+  .lbu3 {
+    width: 104px;
+    height: 75px;
+    left: -30px;
+  }
+  .ltext1 {
+    font-size: 18px;
+    top: 125px;
+    left: 30px;
+  }
+  .lgreen1_size {
+    width: 100px;
+    height: 125px;
+  }
+  .lgreen1_box {
+    top: -50px;
+    left: -30px;
+  }
+  .lgreen2_size {
+    width: 105px;
+    height: 120px;
+  }
+  .lgreen2_box {
+    top: 110px;
+    left: 130px;
+  }
+  .lcherry1 {
+    top: -50px;
+    left: -30px;
+    width: 150px;
+    height: 95px;
+  }
+  .lcherry2 {
+    top: 130px;
+    right: -10px;
+    width: 120px;
+    height: 80px;
+  }
+}
+
+@media(max-width:700px){
+  .lboxlist {
+    top: -410px;
+    width: 700px;
+    height: 150px;
+  }
+}
