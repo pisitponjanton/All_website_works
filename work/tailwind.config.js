@@ -40,6 +40,7 @@ module.exports = {
         'star2': "url('/Water1/star2.png')",
         'text': "url('/Water1/text.png')",
         'bg1-2': "url('/Water1/bg1.png')",
+        'bg1-21': "url('/Water1/bg2.png')",
         'seed': "url('/Water1/seed.png')",
         'human': "url('/Water1/human.png')",
         'human2': "url('/Water1/human2.png')",
