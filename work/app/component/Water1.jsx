@@ -30,12 +30,12 @@ export default function Water1() {
   }, []);
 
   return (
-    <div className="w-full h-[1000px] relative max-[1385px]:h-[700px] max-[900px]:h-[400px]">
+    <div className="w-full flex justify-start h-[1000px] relative max-[1385px]:h-[700px] max-[900px]:h-[400px] max-[590px]:h-[300px] max-[590px]:scale-[0.8] max-[590px]:left-[-60px] max-[590px]:top-[-50px] max-[460px]:scale-[0.54] max-[460px]:left-[-75px] max-[460px]:top-[-120px]">
       <div className="absolute top-[-182px] max-[1385px]:top-[-200px] left-[-100px] max-[1385px]:left-[-70px] max-[900px]:left-[-50px] bg-star2 bg-cover bg-center bg-no-repeat w-[600px] max-[1385px]:w-[350px] max-[900px]:w-[250px] h-[500px] max-[1385px]:h-[300px] max-[900px]:h-[200px] z-[5] animate-up-down">
         <div className="absolute top-[200px] max-[1385px]:top-[125px] max-[900px]:top-[90px] right-[-275px] max-[1385px]:right-[-160px] max-[900px]:right-[-70px] bg-text bg-cover bg-center bg-no-repeat w-[600px] h-[140px] max-[1385px]:w-[350px] max-[900px]:w-[200px] max-[1385px]:h-[81px] max-[900px]:h-[47px]"></div>
       </div>
       <div
-        className="relative top-[170px] max-[1385px]:top-[0px] max-[900px]:top-[-50px] z-[1]"
+        className="relative top-[170px] max-[1385px]:top-[0px] flex flex-col justify-start max-[900px]:top-[-50px] z-[1] "
         ref={elementRef}
       >
         <div className="relative w-[1290px] max-[1385px]:w-[780px] max-[900px]:w-[500px] h-[700px] max-[1385px]:h-[420px] max-[900px]:h-[270px] bg-bg1-2 bg-cover bg-center bg-no-repeat">
