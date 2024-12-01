@@ -8,19 +8,19 @@ export default function About() {
     });
   };
   return (
-    <div className="w-screen h-[900px] max-[1080px]:h-[850px] max-[768px]:h-[750px] max-[590px]:h-[600px] flex justify-center relative overflow-hidden">
+    <div className="w-screen h-[900px] max-[1080px]:h-[850px] max-[768px]:h-[750px] max-[590px]:h-[620px] max-[375px]:h-[600px] flex justify-center relative overflow-hidden">
       <div className="w-full h-[750px] max-[1080px]:h-[700px] max-[768px]:h-[600px] max-[590px]:h-[500px] bg-Aboutbg relative  overflow-hidden flex ">
         <div className="relative top-[-10px] bg-bgaa bg-cover bg-center bg-no-repeat w-[35%] h-[105%] max-[590px]:hidden"></div>
         <div className="w-[65%] max-[590px]:w-[100%] h-full relative top-[50px] flex flex-col items-center">
           <div className="w-[90%] text-[#ffff] font-inter-bold">
-            <div className="text-[55px] max-[1080px]:text-[50px] max-[945px]:text-[35px]">
+            <div className="text-[55px] max-[1080px]:text-[50px] max-[945px]:text-[35px] max-[375px]:text-[30px]">
               Simple <span className="text-[#8F91FF]">Solution</span>
             </div>
-            <div className="text-[40px] max-[1080px]:text-[35px] max-[945px]:text-[20px]">
+            <div className="text-[40px] max-[1080px]:text-[35px] max-[945px]:text-[20px] max-[375px]:text-[15px]">
               Why did we create this beverage?
             </div>
           </div>
-          <div className="relative top-[40px] flex gap-[50px]">
+          <div className="relative top-[40px] flex gap-[50px] max-[375px]:gap-[40px]">
             <div className="flex flex-col relative justify-center items-center gap-[45px] text-[#fff] font-inter-bold text-[50px] max-[768px]:text-[40px]">
               <div className="absolute w-[10px] max-[375px]:w-[6px] h-full max-[1080px]:h-[80%] z-[9] bg-[#A0A2FF] "></div>
               <div
@@ -47,7 +47,8 @@ export default function About() {
             </div>
             <div className="flex flex-col gap-[50px]">
               <div className="flex flex-col font-inter-bold">
-                <div className="text-[#fff] text-[30px] max-[1080px]:text-[25px] max-[768px]:text-[20px]">
+                <div className="text-[#fff] text-[30px] max-[1080px]:text-[25px] max-[768px]:text-[20px]
+                max-[375px]:text-[15px]">
                   We understand
                 </div>
                 <div className="text-[#B3B3B3] text-[20px] max-[1080px]:text-[15px] max-[768px]:text-[10px]">
@@ -59,7 +60,8 @@ export default function About() {
                 </div>
               </div>
               <div className="flex flex-col font-inter-bold">
-                <div className="text-[#fff] text-[30px] max-[1080px]:text-[25px] max-[768px]:text-[20px]">
+                <div className="text-[#fff] text-[30px] max-[1080px]:text-[25px] max-[768px]:text-[20px]
+                max-[375px]:text-[15px]">
                   But
                 </div>
                 <div className="text-[#B3B3B3] text-[20px] max-[1080px]:text-[15px] max-[768px]:text-[10px]">
@@ -67,7 +69,8 @@ export default function About() {
                 </div>
               </div>
               <div className="flex flex-col font-inter-bold">
-                <div className="text-[#fff] text-[30px] max-[1080px]:text-[25px] max-[768px]:text-[20px]">
+                <div className="text-[#fff] text-[30px] max-[1080px]:text-[25px] max-[768px]:text-[20px]
+                max-[375px]:text-[15px]">
                   That&#8217;s why
                 </div>
                 <div className="text-[#B3B3B3] text-[20px] max-[1080px]:text-[15px] max-[768px]:text-[10px]">
