@@ -19,13 +19,19 @@ export default function Contact() {
           <div className="bg-namecon bg-no-repeat bg-cover bg-center w-[580px] h-[220px] relative
           max-[500px]:scale-[0.9] max-[500px]:left-[-100px]"></div>
 
-          <div className="flex justify-center items-center gap-[30px] mt-[50px]">
+          <div className="flex justify-center items-center gap-[30px] mt-[50px] max-[1290px]:hidden">
             <div className="bg-map bg-no-repeat bg-cover bg-center w-[70px] h-[70px]"></div>
             <div className="text-[20px] flex flex-col">
               <div>Street3720 PoteeSt.</div>
               <div>City Baltimore State Maryland Postal</div>
               <div> Code21225 Country United States</div>
             </div>
+          </div>
+          <div className="text-[#fff] min-[1290px]:hidden mt-[50px]">
+            <div className="text-[40px]">Navigation</div>
+            <div className="text-[20px] mt-[20px]">Home</div>
+            <div className="text-[20px] mt-[10px]">About us</div>
+            <div className="text-[20px] mt-[10px]">Contact</div>
           </div>
 
           <div className="flex justify-center items-center gap-[30px] mt-[100px]">
@@ -42,11 +48,19 @@ export default function Contact() {
         <div className="flex flex-col items-start px-[100px]
         max-[700px]:px-[20px]
         max-[500px]:px-[0px]">
-          <div className="text-[#fff]">
+          <div className="text-[#fff] max-[1290px]:hidden">
             <div className="text-[40px]">Navigation</div>
             <div className="text-[20px] mt-[20px]">Home</div>
             <div className="text-[20px] mt-[10px]">About us</div>
             <div className="text-[20px] mt-[10px]">Contact</div>
+          </div>
+          <div className="flex justify-center items-center gap-[30px] min-[1290px]:hidden">
+            <div className="bg-map bg-no-repeat bg-cover bg-center w-[70px] h-[70px]"></div>
+            <div className="text-[20px] flex flex-col">
+              <div>Street3720 PoteeSt.</div>
+              <div>City Baltimore State Maryland Postal</div>
+              <div> Code21225 Country United States</div>
+            </div>
           </div>
 
           <div className="flex justify-center items-center gap-[30px] mt-[100px]">
