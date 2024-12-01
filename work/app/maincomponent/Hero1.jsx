@@ -7,26 +7,26 @@ import Water2 from "../component/Water2";
 import Water3 from "../component/Water3";
 
 export default function Hero1() {
-  const handleClick1 = () => {
-    window.scrollTo({
-      top: 0, // ตำแหน่งแนวตั้ง (px)
-      behavior: "smooth", // การเลื่อนอย่างนุ่มนวล
-    });
-  };
+  // const handleClick1 = () => {
+  //   window.scrollTo({
+  //     top: 0, // ตำแหน่งแนวตั้ง (px)
+  //     behavior: "smooth", // การเลื่อนอย่างนุ่มนวล
+  //   });
+  // };
 
-  const handleClick2 = () => {
-    window.scrollTo({
-      top: 4210, // ตำแหน่งแนวตั้ง (px)
-      behavior: "smooth", // การเลื่อนอย่างนุ่มนวล
-    });
-  };
+  // const handleClick2 = () => {
+  //   window.scrollTo({
+  //     top: 4210, // ตำแหน่งแนวตั้ง (px)
+  //     behavior: "smooth", // การเลื่อนอย่างนุ่มนวล
+  //   });
+  // };
 
-  const handleClick3 = () => {
-    window.scrollTo({
-      top: 5000, // ตำแหน่งแนวตั้ง (px)
-      behavior: "smooth", // การเลื่อนอย่างนุ่มนวล
-    });
-  };
+  // const handleClick3 = () => {
+  //   window.scrollTo({
+  //     top: 5000, // ตำแหน่งแนวตั้ง (px)
+  //     behavior: "smooth", // การเลื่อนอย่างนุ่มนวล
+  //   });
+  // };
   return (
     <div className="w-screen overflow-hidden relative">
       <div className="bg-ch w-[728px] h-[675px] bg-cover bg-center bg-no-repeat absolute top-[-400px] right-[-380px]"></div>
@@ -37,19 +37,19 @@ export default function Hero1() {
       <div className="w-screen z-[100] relative flex justify-end">
         <div className="flex justify-around w-[500px] p-5 text-[25px] max-[440px]:text-[18px] font-inter-bold text-[#ffff]">
           <div
-            onClick={handleClick1}
+            // onClick={handleClick1}
             className="cursor-pointer duration-500 ease-in-out hover:scale-110"
           >
             Home
           </div>
           <div
-            onClick={handleClick2}
+            // onClick={handleClick2}
             className="cursor-pointer duration-500 ease-in-out hover:scale-110"
           >
             About Us
           </div>
           <div
-            onClick={handleClick3}
+            // onClick={handleClick3}
             className="cursor-pointer duration-500 ease-in-out hover:scale-110"
           >
             Contact

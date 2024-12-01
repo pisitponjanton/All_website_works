@@ -25,6 +25,7 @@ const Center1 = () => {
             <div className="absolute top-[-8px] z-[-20] left-[93px] bg-m4 bg-cover bg-center w-[60px] h-[120px]"></div>
             <div className="absolute top-[110px] z-[-20] left-[89px] bg-m6 bg-cover bg-center w-[100px] h-[120px]"></div>
           </div>
+          <div className="text-center text-[50px] text-[#fff] relative top-[50px] uppercase">welcome</div>
         </div>
       </div>
     </div>

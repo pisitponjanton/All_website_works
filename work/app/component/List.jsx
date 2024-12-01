@@ -80,9 +80,7 @@ export default function List() {
             </div>
             <div
               className={`absolute lboxre3 duration-700 ease-in-out ${
-                isVisible
-                  ? ""
-                  : "translate-y-[-580px] translate-x-[-750px] scale-[1.6]"
+                isVisible ? "animate-move-up" : "scale-0"
               }`}
             >
               <div className="lbox bg-cherry1 bg-cover bg-center bg-no-repeat animate-left-right2"></div>
