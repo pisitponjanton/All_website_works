@@ -6,6 +6,7 @@ export default function Contact() {
     max-[1290px]:flex-col
     max-[1290px]:pt-[50px]
     max-[500px]:pt-[0px]
+    max-[500px]:pb-[0px]
     ">
       <div className="w-[50%] h-full
       max-[1290px]:w-full
