@@ -28,13 +28,26 @@ export default function Water2() {
   }, []);
 
   return (
-    <div className="w-full relative h-[850px]">
-      <div className="relative flex justify-end z-[1]" ref={elementRef}>
+    <div className="w-full flex justify-end relative h-[850px] max-[1385px]:h-[700px] max-[978px]:h-[550px] max-[700px]:h-[250px]">
+      <div
+        className="relative z-[1] max-[1385px]:scale-[0.7] max-[1385px]:right-[-200px]
+       max-[978px]:scale-[0.5] max-[978px]:right-[-325px] max-[978px]:top-[-140px]
+       max-[700px]:scale-[0.25] max-[700px]:right-[-485px]"
+        ref={elementRef}
+      >
         <div className="bg-bg2-2 bg-cover bg-center bg-no-repeat w-[1290px] h-[700px] relative">
           <div className="absolute top-[-175px] right-[220px] bg-ww22 bg-center bg-cover bg-no-repeat w-[210px] h-[260px] z-[-10] animate-up-down"></div>
           <div className="absolute top-[530px] left-[-100px] bg-ww23 bg-center bg-cover bg-no-repeat w-[270px] h-[270px] z-[-10] animate-up-down"></div>
-          <div className={`absolute top-[165px] right-[65px] bg-h1 bg-cover bg-center bg-no-repeat w-[100px] h-[100px] ${isVisible ? "scale-1 animate-move-up": "scale-0"}`}></div>
-          <div className={`absolute top-[370px] right-[68px] bg-woman bg-cover bg-center bg-no-repeat w-[100px] h-[101px] ${isVisible ? "scale animate-move-up": "scale-0"}`}></div>
+          <div
+            className={`absolute top-[165px] right-[65px] bg-h1 bg-cover bg-center bg-no-repeat w-[100px] h-[100px] ${
+              isVisible ? "scale-1 animate-move-up" : "scale-0"
+            }`}
+          ></div>
+          <div
+            className={`absolute top-[370px] right-[68px] bg-woman bg-cover bg-center bg-no-repeat w-[100px] h-[101px] ${
+              isVisible ? "scale animate-move-up" : "scale-0"
+            }`}
+          ></div>
           <div
             className={`absolute 
             ${

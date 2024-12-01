@@ -30,8 +30,13 @@ export default function Water3() {
   }, []);
 
   return (
-    <div className="w-full relative h-[750px]">
-      <div className="relative z-[1]" ref={elementRef}>
+    <div className="w-full flex justify-start relative h-[750px] max-[1385px]:h-[600px] max-[978px]:h-[300px] max-[700px]:h-[120px]">
+      <div
+        className="relative z-[1] max-[1385px]:scale-[0.7] max-[1385px]:left-[-195px] max-[1385px]:top-[-70px]
+       max-[978px]:scale-[0.5] max-[978px]:left-[-325px] max-[978px]:top-[-180px]
+       max-[700px]:scale-[0.25] max-[700px]:left-[-485px] max-[700px]:top-[-120px]"
+        ref={elementRef}
+      >
         <div className="relative w-[1290px] h-[700px] bg-bg3-2 bg-cover bg-center bg-no-repeat">
           <div
             className={`absolute ${
