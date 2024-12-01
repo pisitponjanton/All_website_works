@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Center1 = () => {
   return (
     <div className="flex justify-center items-center animate-up-down absolute top-[650px] max-[978px]:top-[550px] max-[700px]:top-[490px] max-[440px]:top-[340px]">
@@ -25,7 +27,7 @@ const Center1 = () => {
             <div className="absolute top-[-8px] z-[-20] left-[93px] bg-m4 bg-cover bg-center w-[60px] h-[120px]"></div>
             <div className="absolute top-[110px] z-[-20] left-[89px] bg-m6 bg-cover bg-center w-[100px] h-[120px]"></div>
           </div>
-          <div className="text-center text-[50px] text-[#fff] relative top-[50px] uppercase">welcome</div>
+          <div className="text-center text-[20px] text-[#fff] relative top-[50px] uppercase">เว็บตัวอย่าง สนใจติดต่อ <Link href={"tel:0645809429"}>0645809429</Link></div>
         </div>
       </div>
     </div>
