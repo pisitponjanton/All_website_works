@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "LuckiestGuy";
+  src: url("/fonts/LuckiestGuy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "LuckiestGuy", sans-serif;
+}
+
+@font-face {
+  font-family: "RubikMaps";
+  src: url("/fonts/RubikMaps-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-RubikMaps {
+  font-family: "RubikMaps", sans-serif;
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url("/fonts/JosefinSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-JosefinSans {
+  font-family: "JosefinSans", sans-serif;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-scale {
+  animation: scale 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.animate-slide {
+  animation: slide 1.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.animate-text span {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.animate-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animate-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animate-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.animate-text span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.animate-text span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.animate-text span:nth-child(6) {
+  animation-delay: 1s;
+}
+.animate-text span:nth-child(7) {
+  animation-delay: 1.2s;
+}
