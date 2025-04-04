@@ -8,7 +8,7 @@ export default function Hero1() {
       <h1 className="text-[#4F6816] text-[5vw] absolute animate-slide">
         Welcome to
       </h1>
-      <h1 className="text-[#4F6816] text-[20vw] font-RubikMaps animate-text relative">
+      <h1 className="text-[#4F6816] text-[18vw] font-RubikMaps animate-text relative">
         <span>L</span>
         <span>A</span>
         <span>T</span> <span>C</span>
