@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero3() {
   return (
@@ -17,37 +18,42 @@ export default function Hero3() {
             Contact us
           </h1>
           <div className="flex gap-[4vw] relative right-[2vw] top-[1vw]">
-            <Image
-              src={"/image/Hero3/ig.png"}
-              width={100}
-              height={100}
-              alt="ig"
-              className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
-              onClick={() => {
-                window.location.href =
-                  "https://www.instagram.com/mte_company?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
-              }}
-            />
-            <Image
-              src={"/image/Hero3/tel.png"}
-              width={100}
-              height={100}
-              alt="Tel"
-              className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
-              onClick={() => {
-                window.location.tel = "tel:0645809429";
-              }}
-            />
-            <Image
-              src={"/image/Hero3/mail.png"}
-              width={100}
-              height={100}
-              alt="mail"
-              className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
-              onClick={() => {
-                window.location.href = "mailto:mtecdesign22@gmail.com?subject=Hello&body=I%20am%20interested%20in%20your%20services.";
-              }}
-            />
+            <Link
+              href={
+                "https://www.instagram.com/mte_company?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              }
+              target="_bank"
+            >
+              <Image
+                src={"/image/Hero3/ig.png"}
+                width={100}
+                height={100}
+                alt="ig"
+                className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
+              />
+            </Link>
+            <Link href={"tel:0645809429"}>
+              <Image
+                src={"/image/Hero3/tel.png"}
+                width={100}
+                height={100}
+                alt="Tel"
+                className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
+              />
+            </Link>
+            <Link
+              href={
+                "mailto:mtecdesign22@gmail.com?subject=Hello&body=I%20am%20interested%20in%20your%20services."
+              }
+            >
+              <Image
+                src={"/image/Hero3/mail.png"}
+                width={100}
+                height={100}
+                alt="mail"
+                className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
+              />
+            </Link>
           </div>
         </div>
       </div>
