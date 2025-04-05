@@ -22,7 +22,7 @@ export default function Hero3() {
               width={100}
               height={100}
               alt="ig"
-              className="w-[5vw] h-[5vw]"
+              className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
               onClick={() => {
                 window.location.href =
                   "https://www.instagram.com/mte_company?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
@@ -33,7 +33,7 @@ export default function Hero3() {
               width={100}
               height={100}
               alt="Tel"
-              className="w-[5vw] h-[5vw]"
+              className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
               onClick={() => {
                 window.location.tel = "tel:0645809429";
               }}
@@ -43,7 +43,7 @@ export default function Hero3() {
               width={100}
               height={100}
               alt="mail"
-              className="w-[5vw] h-[5vw]"
+              className="w-[5vw] h-[5vw] hover:scale-105 duration-300 ease-in-out"
               onClick={() => {
                 window.location.href = "mailto:mtecdesign22@gmail.com?subject=Hello&body=I%20am%20interested%20in%20your%20services.";
               }}
