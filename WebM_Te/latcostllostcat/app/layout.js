@@ -1,4 +1,4 @@
-import Head from "@/component/Head";
+import Head from "@/component_landdingpage/Head";
 import "./globals.css";
 
 export const metadata = {
