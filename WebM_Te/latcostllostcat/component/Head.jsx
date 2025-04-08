@@ -8,7 +8,7 @@ export default function Head() {
   const [log, setLog] = useState(["translate-x-[60px]", "translate-x-[90px]",0]);
   return (
     <div
-      className={`flex justify-between items-center h-[120px] px-10 overflow-hidden bg-[#B8DBC0]`}
+      className={`flex justify-between items-center h-[120px] px-10 overflow-hidden `}
     >
       <Image
         src={"/image/logo.png"}

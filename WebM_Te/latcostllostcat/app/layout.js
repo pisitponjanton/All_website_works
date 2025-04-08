@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
-      <body className={``}>
+      <body className={` w-screen h-screen`}>
         {children}
       </body>
     </html>
