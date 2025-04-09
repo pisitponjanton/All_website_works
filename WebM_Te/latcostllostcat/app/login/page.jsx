@@ -1,48 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useAuth } from "../../component/AuthContext";
 
 const Page = () => {
-  const [email, setEmail] = useState("");
-
-  const [password, setPassword] = useState("");
-
-  const submit = async (e) => {
-    e.preventDefault();
-    if (!email || !password) {
-      alert("กรุณากรอก email และ password");
-      return;
-    }
-
-    try {
-      const response = await fetch("http://localhost:3002/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        console.log("✅ เข้าสู่ระบบสำเร็จ Token:", data.token);
-        alert("เข้าสู่ระบบสำเร็จ!");
-        localStorage.setItem("token", data.token);
-      } else {
-        alert(data.message);
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("เกิดข้อผิดพลาด");
-    }
-  };
-
+  const { submit_login, setEmail, setPassword } = useAuth();
   return (
     <div className=" w-screen h-screen bg-register flex flex-col justify-center items-center relative overflow-hidden">
+      <Link
+        href={"/"}
+        className="bg-[url('/image/register/backhome.png')] bg-cover bg-center w-[5vw] h-[5vw] absolute top-[1vw] left-[1vw] hover:scale-105 duration-200 ease-in-out"
+      />
       <div className="w-screen h-[40vw] absolute bottom-0 bg-[url('/image/register/test.png')] bg-cover bg-center"></div>
-      <div className="w-[60vw] h-[45vw] bg-[#D9D9D9]/50 z-[5] rounded-3xl flex flex-col p-[3vw] max-sm:scale-[1.3]">
+      <div className="w-[60vw] h-[45vw] bg-[#D9D9D9]/50 z-[5] rounded-3xl flex flex-col p-[3vw] max-sm:scale-[1.3] animate-scale">
         <div className="flex flex-col text-[#0D4E59] relative">
           <h1 className="text-[5vw]">Hello!</h1>
           <h2 className="text-[3vw] relative top-[-2vw]">
@@ -52,7 +22,7 @@ const Page = () => {
         </div>
         <div className=" relative flex flex-col w-full justify-center items-center">
           <form
-            onSubmit={submit}
+            onSubmit={submit_login}
             className=" relative flex flex-col text-[2.5vw] gap-[2vw] items-center w-full"
           >
             <input

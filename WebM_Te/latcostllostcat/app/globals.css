@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "LuckiestGuy";
   src: url("/fonts/LuckiestGuy-Regular.ttf") format("truetype");
@@ -11,7 +13,7 @@ body {
   font-family: "LuckiestGuy", sans-serif;
 }
 
-.font-LuckiestGuy{
+.font-LuckiestGuy {
   font-family: "LuckiestGuy", sans-serif;
 }
 
@@ -109,8 +111,8 @@ body::before {
   animation-delay: 1.2s;
 }
 
-.bg-register{
-  background: linear-gradient(to bottom, #FFFFFF 0%, #0D4E59 100%);
+.bg-register {
+  background: linear-gradient(to bottom, #ffffff 0%, #0d4e59 100%);
 }
 
 .bg-full1 {

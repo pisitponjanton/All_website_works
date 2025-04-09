@@ -19,8 +19,8 @@ export default function Head() {
       />
       <div className="flex justify-around items-center w-[50vw] text-[#000000] text-[2.5vw] pt-[0.5vw]">
         <Link href={"/"}>Home</Link>
-        <Link href={"/aboutus"}>about us</Link>
-        <Link href={"/contact"}>contact</Link>
+        <Link href={"#aboutus"}>about us</Link>
+        <Link href={"#contact"}>contact</Link>
       </div>
       <div className=" relative flex justify-center items-center">
         <div className="flex justify-center items-center relative rounded-3xl overflow-hidden bg-[#000000] text-[1.4vw]">

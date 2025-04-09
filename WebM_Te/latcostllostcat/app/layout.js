@@ -1,16 +1,16 @@
-import Head from "@/component_landdingpage/Head";
 import "./globals.css";
-
+import { AuthProvider } from "../component/AuthContext";
 export const metadata = {
   title: "Lat Cost - รับเลี้ยงและหาเลี้ยงแมวจรจัด",
-  description: "เว็บไซต์ Lat Cost ช่วยให้คุณสามารถรับเลี้ยงหรือหาเลี้ยงแมวจรจัดในแต่ละพื้นที่ เพื่อสร้างชุมชนที่ดีให้กับสัตว์ที่ต้องการความช่วยเหลือ.",
-  keywords: "รับเลี้ยงแมวจรจัด, หาเลี้ยงแมวจรจัด, แมวจรจัด, การช่วยเหลือสัตว์, เลี้ยงแมว, แมวไร้บ้าน, สัตว์เลี้ยง, ช่วยแมวจรจัด",
+  description:
+    "เว็บไซต์ Lat Cost ช่วยให้คุณสามารถรับเลี้ยงหรือหาเลี้ยงแมวจรจัดในแต่ละพื้นที่ เพื่อสร้างชุมชนที่ดีให้กับสัตว์ที่ต้องการความช่วยเหลือ.",
+  keywords:
+    "รับเลี้ยงแมวจรจัด, หาเลี้ยงแมวจรจัด, แมวจรจัด, การช่วยเหลือสัตว์, เลี้ยงแมว, แมวไร้บ้าน, สัตว์เลี้ยง, ช่วยแมวจรจัด",
   author: "ทีม Lat Cost",
   icons: {
     icon: "/favicon.ico",
   },
 };
-
 
 export default function RootLayout({ children }) {
   return (
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body className={` w-screen h-screen`}>
-        {children}
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

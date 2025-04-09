@@ -138,7 +138,7 @@ export default function Hero2() {
   return (
     <div className="w-screen flex items-center flex-col relative">
       <div className=" absolute bg-[url('/image/Hero2/footcat1.png')] bg-cover bg-center w-[10vw] h-[10vw] top-[-14vw] left-[9.5vw]"></div>
-      <h1 className="text-[6.5vw] text-[#0D4E59] relative top-[-11vw]">
+      <h1 className="text-[6.5vw] text-[#0D4E59] relative top-[-11vw]" id="aboutus">
         caring furry friend
       </h1>
       <div
