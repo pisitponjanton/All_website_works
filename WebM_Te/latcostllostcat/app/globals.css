@@ -11,6 +11,10 @@ body {
   font-family: "LuckiestGuy", sans-serif;
 }
 
+.font-LuckiestGuy{
+  font-family: "LuckiestGuy", sans-serif;
+}
+
 body::before {
   content: "background";
   position: absolute;
