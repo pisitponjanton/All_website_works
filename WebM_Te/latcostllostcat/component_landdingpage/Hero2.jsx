@@ -142,7 +142,7 @@ export default function Hero2() {
         caring furry friend
       </h1>
       <div
-        className={`w-[90vw] h-[45vw] rounded-[3.5vw] ${catSw.bgcolor} duration-1000 ease-in-out relative top-[-12vw] flex overflow-hidden`}
+        className={` cursor-pointer w-[90vw] h-[45vw] rounded-[3.5vw] ${catSw.bgcolor} duration-1000 ease-in-out relative top-[-12vw] flex overflow-hidden`}
         onClick={stopTimer}
       >
         <div className=" absolute bg-[url('/image/Hero2/c1.png')] bg-cover bg-center w-[25vw] h-[25vw]" />

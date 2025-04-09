@@ -11,6 +11,16 @@ body {
   font-family: "LuckiestGuy", sans-serif;
 }
 
+body::before {
+  content: "background";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url("/image/Hero3/bgfull.png"),
+    url("/image/Hero3/bgfull2.png");
+}
+
 @font-face {
   font-family: "RubikMaps";
   src: url("/fonts/RubikMaps-Regular.ttf") format("truetype");
@@ -93,4 +103,19 @@ body {
 }
 .animate-text span:nth-child(7) {
   animation-delay: 1.2s;
+}
+
+.bg-register{
+  background: linear-gradient(to bottom, #FFFFFF 0%, #0D4E59 100%);
+}
+
+.bg-full1 {
+  background-image: url("/image/Hero3/bgfull.png");
+  background-position: center;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-full1:hover {
+  background-image: url("/image/Hero3/bgfull2.png");
 }

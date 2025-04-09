@@ -5,7 +5,9 @@ import Link from "next/link";
 export default function Hero3() {
   return (
     <div className="w-screen flex flex-col justify-center items-center z-[1] relative mt-[12vw]">
-      <div className="bg-[url('/image/Hero3/bgfull.png')] duration-500 ease-in-out hover:scale-105 bg-cover bg-center w-[85vw] h-[40.5vw] absolute top-[-20vw]"></div>
+      <div className="bg-full1 duration-500 ease-in-out hover:scale-[1.05] w-[85vw] h-[40.5vw] absolute top-[-20vw]">
+      <div className="bg-[url('/image/Hero3/footcat1.png')] bg-cover bg-center absolute w-[18vw] h-[18vw] bottom-[-2.5vw] left-[4vw]"/>
+      </div>
       <div className="w-screen h-[20vw] bg-[#1997AD] relative mt-[25vw]">
         <div className=" absolute w-[15vw] h-[16vw] bg-[url('/image/Hero3/cat.png')] bg-cover bg-center left-[4vw] top-[2vw]"></div>
         <div className=" relative w-[35vw] right-[-23vw] top-[3vw] text-[2.2vw] text-[#0E4F5A]">
