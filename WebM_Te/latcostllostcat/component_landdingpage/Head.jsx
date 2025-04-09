@@ -24,19 +24,19 @@ export default function Head() {
       </div>
       <div className=" relative flex justify-center items-center">
         <div className="flex justify-center items-center relative rounded-3xl overflow-hidden bg-[#000000] text-[1.4vw]">
-          <Link href={"/signup"}>
-            <div
-              onClick={() => {
-                setLog(["translate-x-[-5vw]", "translate-x-[-8vw]", 1]);
-              }}
-              className={`z-[1] ${
-                log[2] == 0 ? "text-[#F4DC61]" : "text-[#000000]"
-              }  pt-[0.5vw] flex justify-center items-center w-[8vw] h-[3vw]`}
-            >
-              sign up
-            </div>
+          <Link
+            href={"/signup"}
+            onClick={() => {
+              setLog(["translate-x-[-5vw]", "translate-x-[-8vw]", 1]);
+            }}
+            className={`z-[1] ${
+              log[2] == 0 ? "text-[#F4DC61]" : "text-[#000000]"
+            }  pt-[0.5vw] flex justify-center items-center w-[8vw] h-[3vw]`}
+          >
+            sign up
           </Link>
-          <div
+          <Link
+            href={"/login"}
             onClick={() => {
               setLog(["translate-x-[5vw]", "translate-x-[8vw]", 0]);
             }}
@@ -45,7 +45,7 @@ export default function Head() {
             } pt-[0.5vw] flex justify-center items-center w-[8vw] h-[3vw]`}
           >
             log in
-          </div>
+          </Link>
           <div
             className={` ${log[0]} rounded-3xl absolute duration-300 ease-in-out bg-[#F4DC61] w-[9vw] h-full`}
           ></div>
