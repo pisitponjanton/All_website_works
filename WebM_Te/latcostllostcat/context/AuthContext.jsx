@@ -1,9 +1,10 @@
 "use client";
 import { createContext, useContext, useState } from "react";
-
+import { usePathname } from "next/navigation";
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
+  const pathname = usePathname();
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -39,8 +40,9 @@ export const AuthProvider = ({ children }) => {
       const data = await response.json();
 
       if (response.ok) {
-        console.log("✅ สมัครสำเร็จ Token:", data.token);
         alert("สมัครสำเร็จ!");
+        localStorage.setItem("token", data.token);
+        checkTokenExpiration();
       } else {
         alert(data.message);
       }
@@ -48,6 +50,7 @@ export const AuthProvider = ({ children }) => {
       alert("เกิดข้อผิดพลาด, โปรดลองใหม่อีกครั้ง");
     }
   };
+
   const submit_login = async (e) => {
     e.preventDefault();
     if (!email || !password) {
@@ -66,9 +69,9 @@ export const AuthProvider = ({ children }) => {
       const data = await response.json();
 
       if (response.ok) {
-        console.log("✅ เข้าสู่ระบบสำเร็จ Token:", data.token);
         alert("เข้าสู่ระบบสำเร็จ!");
         localStorage.setItem("token", data.token);
+        checkTokenExpiration();
       } else {
         alert(data.message);
       }
@@ -76,34 +79,39 @@ export const AuthProvider = ({ children }) => {
       alert("เกิดข้อผิดพลาด");
     }
   };
-  const fetchUser = async () => {
+
+  const checkTokenExpiration = async () => {
     const token = localStorage.getItem("token");
+
     try {
-      const response = await fetch(`${apiUrl}/me`, {
+      const response = await fetch(`${apiUrl}/check-token`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
       });
 
-      if (!response.ok) {
-        throw new Error("ไม่สามารถดึงข้อมูลผู้ใช้ได้");
-      }
-
       const data = await response.json();
-      console.log(data);
 
-      return data;
+      if (response.ok) {
+        if (pathname !== "/home") {
+          window.location.href = "/home";
+        }
+      } else {
+        if(pathname !== "/login"){
+          localStorage.setItem("token", "");
+          window.location.href = "/login";
+        }
+      }
     } catch (error) {
-      console.error("เกิดข้อผิดพลาดในการดึงข้อมูลผู้ใช้:", error);
-      return null;
+      console.error("Error checking token:", error);
     }
   };
 
   return (
     <AuthContext.Provider
       value={{
-        fetchUser,
+        checkTokenExpiration,
         submit_login,
         submit_signup,
         setEmail,

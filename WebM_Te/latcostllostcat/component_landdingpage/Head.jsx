@@ -26,6 +26,7 @@ export default function Head() {
         <div className="flex justify-center items-center relative rounded-3xl overflow-hidden bg-[#000000] text-[1.4vw]">
           <Link
             href={"/signup"}
+            target="_bank"
             onClick={() => {
               setLog(["translate-x-[-5vw]", "translate-x-[-8vw]", 1]);
             }}
@@ -37,6 +38,7 @@ export default function Head() {
           </Link>
           <Link
             href={"/login"}
+            target="_bank"
             onClick={() => {
               setLog(["translate-x-[5vw]", "translate-x-[8vw]", 0]);
             }}

@@ -1,5 +1,5 @@
 import "./globals.css";
-import { AuthProvider } from "../component/AuthContext";
+import { AuthProvider } from "../context/AuthContext";
 export const metadata = {
   title: "Lat Cost - รับเลี้ยงและหาเลี้ยงแมวจรจัด",
   description:

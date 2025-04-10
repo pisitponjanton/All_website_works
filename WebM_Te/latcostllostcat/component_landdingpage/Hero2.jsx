@@ -22,7 +22,15 @@ export default function Hero2() {
       `Chocolate is a cat who was born completely blind in both eyes.Without the ability to see, he spent his early days living at a temple, where he had no owner to care for him.Each day was a challenge, as he struggled to find his way around and survive without the gift of sight.`,
       `But now, Chocolate has finally found a loving home.`,
     ],
-    text3: [``, ``],
+    text3: [
+      `John Wick is a cat that the family didn't originally plan to adopt. 
+      They had intended to adopt his older sibling, Dino.John Wick was a stray cat living in the countryside, 
+      where the family often visited a resort where both John Wick and Dino stayed.There weren't just two cats there — many cats lived around the area — but each time the family visited, 
+      a few cats would mysteriously disappear.The family grew especially close to Dino and had planned to bring him home the following week.However, 
+      something unexpected happened: Dino disappeared, and only John Wick was left.Without hesitation, 
+      the family decided to adopt John Wick immediately.`,
+      `Don't worry — John Wick is now living happily in a loving and caring family.`,
+    ],
     text4: [``, ``],
     text5: [``, ``],
   });
@@ -56,8 +64,8 @@ export default function Hero2() {
       });
     } else if (checkIndex % 5 === 2) {
       setCatSw({
-        nameColor: "text-[#]",
-        name: "",
+        nameColor: "text-[#8FEECB]",
+        name: "john wick",
         textU: text.text3[0],
         textD: text.text3[1],
         bgcolor: "bg-[#1F322B]",
@@ -138,7 +146,10 @@ export default function Hero2() {
   return (
     <div className="w-screen flex items-center flex-col relative">
       <div className=" absolute bg-[url('/image/Hero2/footcat1.png')] bg-cover bg-center w-[10vw] h-[10vw] top-[-14vw] left-[9.5vw]"></div>
-      <h1 className="text-[6.5vw] text-[#0D4E59] relative top-[-11vw]" id="aboutus">
+      <h1
+        className="text-[6.5vw] text-[#0D4E59] relative top-[-11vw]"
+        id="aboutus"
+      >
         caring furry friend
       </h1>
       <div
@@ -152,8 +163,8 @@ export default function Hero2() {
 
         <div className="flex flex-col z-[1] relative top-[8vw] left-[5vw]  duration-1000 ease-in-out">
           <div className={`text-[3vw] ${catSw.nameColor}`}>{catSw.name}</div>
-          <div className="w-[40%] text-[1.3vw] text-[#fff]">{catSw.textU}</div>
-          <div className="w-[40%] text-[1.3vw] mt-[2vw] text-[#fff]">
+          <div className="w-[40%] text-[1.2vw] text-[#fff]">{catSw.textU}</div>
+          <div className="w-[40%] text-[1.2vw] mt-[2vw] text-[#fff]">
             {catSw.textD}
           </div>
         </div>

@@ -1,10 +1,23 @@
 "use client";
 import Link from "next/link";
-import { useAuth } from "../../component/AuthContext";
+import { useAuth } from "../../context/AuthContext";
+import { useEffect } from "react";
 
 const Page = () => {
-  const { submit_signup, setEmail, setPassword, setConfirmPassword } =
-    useAuth();
+  const {
+    submit_signup,
+    setEmail,
+    setPassword,
+    setConfirmPassword,
+    checkTokenExpiration,
+  } = useAuth();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      checkTokenExpiration();
+    }
+  }, [checkTokenExpiration]);
 
   return (
     <div className=" w-screen h-screen bg-register flex flex-col justify-center items-center relative overflow-hidden">
