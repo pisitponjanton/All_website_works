@@ -34,7 +34,7 @@ const Page = () => {
           </h2>
           <div className=" absolute top-0 left-[16.5vw] bg-[url('/image/logo.png')] bg-cover bg-center w-[4.5vw] h-[5.5vw]"></div>
         </div>
-        <div className=" relative flex flex-col w-full justify-center items-center">
+        <div className=" relative flex flex-col w-full justify-center items-center top-[-1vw]">
           <form
             onSubmit={submit_signup}
             className=" relative flex flex-col text-[2.5vw] gap-[2vw] items-center w-full"
@@ -69,6 +69,10 @@ const Page = () => {
             >
               Sign up
             </button>
+            <div className="flex gap-[1vw] text-[1.5vw] relative top-[-1vw]">
+                <h3 className="text-[#ffff]">already have account</h3>
+                <Link href={"/login"} className="text-[#A33333]">log in</Link>
+            </div>
           </form>
         </div>
       </div>

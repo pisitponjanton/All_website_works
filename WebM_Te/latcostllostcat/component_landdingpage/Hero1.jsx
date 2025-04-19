@@ -23,7 +23,7 @@ export default function Hero1() {
         alt="BigCat"
         className=" w-full z-[1] animate-scale relative top-[-15vw]"
       />
-      <Link href={"https://www.youtube.com"} target="_bank" className="animate-scale hover:scale-105 duration-300 ease-in-out bg-[#F4DC61] hover:bg-[#000] hover:text-[#F4DC61] py-[0.3vw] px-[3vw] rounded-4xl absolute bottom-[18vw] z-[1] text-[3vw] pt-[1vw]">Start here</Link>
+      <Link href={"/home"} target="_bank" className="animate-scale hover:scale-105 duration-300 ease-in-out bg-[#F4DC61] hover:bg-[#000] hover:text-[#F4DC61] py-[0.3vw] px-[3vw] rounded-4xl absolute bottom-[18vw] z-[1] text-[3vw] pt-[1vw]">Start here</Link>
     </div>
   );
 }

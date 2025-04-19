@@ -10,6 +10,8 @@ export const AuthProvider = ({ children }) => {
   const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmPassword] = useState("");
 
+  const [haveToken,setHaveToken] = useState(null);
+
   const submit_signup = async (e) => {
     e.preventDefault();
 
@@ -94,23 +96,27 @@ export const AuthProvider = ({ children }) => {
       const data = await response.json();
 
       if (response.ok) {
-        if (pathname !== "/home") {
+        setHaveToken(true);
+        if (pathname !== "/home" && pathname !== "/" ) {
           window.location.href = "/home";
         }
       } else {
-        if(pathname !== "/login"){
+        setHaveToken(false)
+        localStorage.setItem("token","")
+        if(pathname !== "/login" && pathname !== "/" ){
           localStorage.setItem("token", "");
           window.location.href = "/login";
         }
       }
     } catch (error) {
-      console.error("Error checking token:", error);
+      console.log("Invalid token")
     }
   };
 
   return (
     <AuthContext.Provider
       value={{
+        haveToken,
         checkTokenExpiration,
         submit_login,
         submit_signup,

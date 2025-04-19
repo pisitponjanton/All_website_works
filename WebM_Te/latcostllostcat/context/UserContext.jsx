@@ -5,6 +5,7 @@ const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   const [user, setUser] = useState(null);
+  const [pname, setPName] = useState("");
 
   const fetchUser = async () => {
     const token = localStorage.getItem("token");
@@ -22,15 +23,15 @@ export const UserProvider = ({ children }) => {
       });
 
       if (!response.ok) {
-        console.error("ไม่สามารถดึงข้อมูลผู้ใช้ได้")
-        return
+        console.error("ไม่สามารถดึงข้อมูลผู้ใช้ได้");
+        return;
       }
 
       const data = await response.json();
       setUser({
-        id : data.user.id || null,
-        email : data.user.email || null,
-      })
+        id: data.user.id || null,
+        email: data.user.email || null,
+      });
       return true;
     } catch (error) {
       console.error("เกิดข้อผิดพลาดในการดึงข้อมูลผู้ใช้:", error);
@@ -39,7 +40,7 @@ export const UserProvider = ({ children }) => {
   };
 
   return (
-    <UserContext.Provider value={{ fetchUser ,user}}>
+    <UserContext.Provider value={{ fetchUser, user, pname, setPName }}>
       {children}
     </UserContext.Provider>
   );

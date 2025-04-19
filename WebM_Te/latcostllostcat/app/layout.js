@@ -1,5 +1,6 @@
 import "./globals.css";
 import { AuthProvider } from "../context/AuthContext";
+import { UserProvider } from "@/context/UserContext";
 export const metadata = {
   title: "Lat Cost - รับเลี้ยงและหาเลี้ยงแมวจรจัด",
   description:
@@ -19,7 +20,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body className={` w-screen h-screen`}>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          <UserProvider>{children}</UserProvider>
+        </AuthProvider>
       </body>
     </html>
   );

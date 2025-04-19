@@ -2,8 +2,10 @@
 import { useEffect, useState } from "react";
 import { useUser } from "@/context/UserContext";
 import { useAuth } from "@/context/AuthContext";
+import Head from "@/component_control/Head";
+import HomeCat from "@/component_control/HomeCat";
 const Page = () => {
-  const { fetchUser, user } = useUser();
+  const { fetchUser} = useUser();
   const {checkTokenExpiration} = useAuth();
 
   useEffect(() => {
@@ -15,9 +17,9 @@ const Page = () => {
   }, [fetchUser]);
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center">
-      <h1 className="text-[3vw]">{user ? user.email : "loading..."}</h1>
-      <button onClick={()=>{localStorage.setItem("token","")}} className=" cursor-pointer">Logout</button>
+    <div className="w-screen h-screen overflow-hidden">
+        <Head/>
+        <HomeCat/>
     </div>
   );
 };
