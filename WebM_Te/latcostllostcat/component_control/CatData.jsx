@@ -1,8 +1,19 @@
 'use client'
+
 import { useSearchParams } from "next/navigation";
-const CatData = () => {
-    const searchParams = useSearchParams();
-    const catIndex = searchParams.get("catIndex");
+import { Suspense, useEffect, useState } from "react";
+
+const CatDataContent = () => {
+  const searchParams = useSearchParams();
+  const [catIndex, setCatIndex] = useState(null);
+
+  useEffect(() => {
+    const catIndex_in = searchParams.get("catIndex");
+    if (catIndex_in) {
+      setCatIndex(catIndex_in);
+    }
+  }, [searchParams]);
+
   return (
     <div className="w-screen flex px-[5vw] gap-[3vw] justify-center">
       <div className="w-[35vw] h-[38vw] bg-[#0D4E59]"></div>
@@ -25,14 +36,13 @@ const CatData = () => {
         </div>
         <div className="flex flex-col text-[1.7vw]">
           <h1>
-            name : <span className="text-[#0D4E59]">{`-`}</span>
+            name : <span className="text-[#0D4E59]">-</span>
           </h1>
           <h1>
-            characteristic :{" "}
-            <span className="text-[#0D4E59]">{`both blind`}</span>
+            characteristic : <span className="text-[#0D4E59]">both blind</span>
           </h1>
           <h1>
-            color : <span className="text-[#0D4E59]">{`orange`}</span>
+            color : <span className="text-[#0D4E59]">orange</span>
           </h1>
           <h1>
             province : <span className="text-[#0D4E59]">{catIndex}</span>
@@ -41,14 +51,23 @@ const CatData = () => {
         <div className="flex flex-col text-[1.7vw]">
           <h1>contact</h1>
           <h1>
-            tel. : <span className="text-[#0D4E59]">{`0888887776`}</span>
+            tel. : <span className="text-[#0D4E59]">0888887776</span>
           </h1>
           <h1>
-            line : <span className="text-[#0D4E59]">{`@lovecat`}</span>
+            line : <span className="text-[#0D4E59]">@lovecat</span>
           </h1>
         </div>
       </div>
     </div>
   );
 };
+
+const CatData = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CatDataContent />
+    </Suspense>
+  );
+};
+
 export default CatData;
